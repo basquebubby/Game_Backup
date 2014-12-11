@@ -15,7 +15,7 @@ monster4heal = random.randint(10,75)
 monster5heal = random.randint(20,150)
 monster4attack = random.randint(20,125)
 monster5attack = random.randint(50,300)
-heal = 125
+heal = 200
 punchAttk = 10
 swordAttk = 30
 fireballAttk = 100
@@ -178,7 +178,7 @@ while playerhealth > 0:
             if attack == str('H'):
                 if playerhealth < 300:
                     print "75 Health points have been restored to you!"
-                    playerhealth = playerhealth + 75
+                    playerhealth = playerhealth + heal
                 if playerhealth > 300:
                     more = 375 - playerhealth
                     playerhealth = more + playerhealth
@@ -268,7 +268,7 @@ while playerhealth > 0:
         if monster4health > 0:
             print "The Demon Bull fights back!"
             print ""
-            if monster45move == 1 or 2 or 4 or 5:
+            if (monster45move == 1) or (monster45move == 2) or (monster45move == 4) or (monster45move == 5):
                 playerhealth = playerhealth - monster4attack
             if monster45move == 3:
                 if monster4health < 525:
@@ -339,7 +339,7 @@ while playerhealth > 0:
                 if monster5health > 0:
                     print "The Devill fights back!"
                     print ""
-                    if monster45move == 1 or 2 or 4 or 5:
+                    if (monster45move == 1) or (monster45move == 2) or (monster45move == 4) or (monster45move == 5):
                         playerhealth = playerhealth - monster5attack
                     if monster45move == 3:
                         if monster4health < 525:
@@ -377,7 +377,7 @@ while playerhealth > 0:
                 if monster5health > 0:
                     print "The Demon Bull fights back!"
                     print ""
-                    if monster45move == 1 or 2 or 4 or 5:
+                    if (monster45move == 1) or (monster45move == 2) or (monster45move == 4) or (monster45move == 5):
                         playerhealth = playerhealth - monster5attack
                     if monster45move == 3:
                         if monster4health < 525:
