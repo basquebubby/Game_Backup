@@ -302,15 +302,15 @@ while playerhealth > 0:
         print "                                   The End                                    "
         print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
     if answer4 == str('F'):
-        print "Devil: 'You fool! How dare you defy me, I will have your sould for this!'"
+        print "Devil: 'You fool! How dare you defy me, I will have your soul for this!'"
         if (answer1 == str('Y')) and (answer2 == str('N')) and (answer3 == str('Y')) and (answer4 == str('F')):
-            print "SUDDENLY! A gian suit of Titan armour had fallen fro the ceiling!"
+            print "SUDDENLY! A gian suit of Titan armour had fallen from the ceiling!"
             print "You put it on and gain an emense amount of power!"
             playerhealth = TITAN_ARMOUR
             print playername + "'s Health: " + str(playerhealth)
             print playername + "'s Attack: " + str(TITANattk)
             print ""
-            print "Devil: 'No amount of weaponds can deafeat me, prepare to die!'"
+            print "Devil: 'No amount of weapons can deafeat me, prepare to die!'"
             print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
             while monster5health > 0:
                 print playername + "'s Health: " + str(playerhealth)
